@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Jack Frost",
+        "race": "Fairy",
+        "level": 7,
+        "hp": 78,
+        "mp": 45,
+        "resistances": {
+            "reflect": [],
+            "absorb": ["Ice"],
+            "void": [],
+            "resist": [],
+            "weak": ["Fire"]
+        },
+        "skills": [
+            "Bufu",
+            "Mabufu",
+            "Ice Breath"
+        ]
+    },
+    {
+        "name": "Decarabia",
+        "race": "Fallen",
+        "level": 58,
+        "hp": 450,
+        "mp": 240,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": ["Death"],
+            "resist": ["Magic"],
+            "weak": []
+        },
+        "skills": [
+            "Tetrakarn",
+            "Sukukaja",
+            "Megido"
+        ]
+    },
+    {
+        "name": "Oni",
+        "race": "Brute",
+        "level": 25,
+        "hp": 222,
+        "mp": 96,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [],
+            "resist": ["Phys"],
+            "weak": ["Nerve"]
+        },
+        "skills": [
+            "Rakunda",
+            "Berserk",
+            "War Cry"
+        ]
+    }
+]
