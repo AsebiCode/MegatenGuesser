@@ -6,6 +6,8 @@ function App() {
     const [secretDemon, setSecretDemon] = useState(null)
     const [guess, setGuess] = useState('')
     const [guesses, setGuesses] = useState([])
+    // define status de vitória do jogo para travar o input
+    const [gameWon, setGameWon] = useState(false)
 
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * demons.length)
@@ -29,7 +31,7 @@ function App() {
     }
 
     function makeGuess() {
-        if (!secretDemon || !guess.trim()) {
+        if (!secretDemon || !guess.trim() || gameWon) {
             return
         }
 
@@ -103,6 +105,7 @@ function App() {
 
         if (selectedDemon.name === secretDemon.name) {
             confetes();
+            setGameWon(true);
         }
     }
 
@@ -145,16 +148,16 @@ function App() {
 
     return (
         <main className="min-h-screen flex flex-col bg-zinc-900 p-8 text-white items-center">
-            <div className="mx-auto max-w-6xl flex-1">
+            <div className="mx-auto max-w-6xl w-full flex-1">
 
-                <span className="mb-8 flex flex-row justify-center gap-3">
+                <span className="flex flex-row justify-center gap-3">
                     <img className="size-12" src="./src/assets/fav2.ico" alt="" />
-                    <h1 className="mb-8 text-center text-4xl font-bold">
+                    <h1 className="text-center text-4xl font-bold">
                         Megaten Guesser
                     </h1>
                 </span>
 
-                <div className="mb-8 flex justify-center gap-3">
+                <div className="m-6 flex justify-center gap-3">
                     <form
                         onSubmit={(event) => {
                             event.preventDefault()
@@ -166,12 +169,14 @@ function App() {
                             value={guess}
                             onChange={event => setGuess(event.target.value)}
                             placeholder="Insert demon name"
+                            readOnly={gameWon}
                             className="w-80 rounded-lg px-4 py-3 text-white outline-none"
                         />
 
                         <button
                             type="submit"
-                            className="rounded-lg bg-red-600 px-6 py-3 font-bold"
+                            readOnly={gameWon}
+                            className="rounded-lg bg-red-600 px-6 py-3 font-bold text-white transition-colors hover:bg-red-700 cursor-pointer"
                         >
                             Guess
                         </button>

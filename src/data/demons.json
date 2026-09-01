@@ -1,7 +1,9 @@
-[
+[   
+    // FOUL
     {
         "name": "Shadow",
         "race": "Foul",
+        "alignment": "Dark",
         "level": 52,
         "hp": 420,
         "mp": 216,
@@ -9,23 +11,27 @@
             "reflect": [],
             "absorb": [],
             "void": [
-                "death",
-                "phys"
+                "death"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "force",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Mudoon",
+            "Mazionga",
+            "Rakukaja"
+        ]
     },
     {
         "name": "Sakahagi",
         "race": "Foul",
+        "alignment": "Dark",
         "level": 45,
-        "hp": 360,
-        "mp": 186,
+        "hp": 1600,
+        "mp": 46,
         "resistances": {
             "reflect": [],
             "absorb": [],
@@ -37,11 +43,16 @@
             "resist": [],
             "weak": []
         },
-        "skills": []
+        "skills": [
+            "Maragion",
+            "Mabufula",
+            "Mazionga"
+        ]
     },
     {
         "name": "Phantom",
         "race": "Foul",
+        "alignment": "Dark",
         "level": 42,
         "hp": 336,
         "mp": 177,
@@ -49,20 +60,24 @@
             "reflect": [],
             "absorb": [],
             "void": [
-                "death",
-                "phys"
+                "death"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "force",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Mana Drain",
+            "Last Resort",
+            "Tarunda"
+        ]
     },
     {
         "name": "Black Ooze",
         "race": "Foul",
+        "alignment": "Dark",
         "level": 28,
         "hp": 264,
         "mp": 111,
@@ -70,20 +85,24 @@
             "reflect": [],
             "absorb": [],
             "void": [
-                "death",
-                "phys"
+                "death"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "elec",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Deathtouch",
+            "Mute Gaze",
+            "Panic Voice"
+        ]
     },
     {
         "name": "Blob",
         "race": "Foul",
+        "alignment":"Dark",
         "level": 16,
         "hp": 156,
         "mp": 66,
@@ -91,20 +110,24 @@
             "reflect": [],
             "absorb": [],
             "void": [
-                "death",
-                "phys"
+                "death"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "ice",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Zanma",
+            "Toxic Sting",
+            "Last Resort"
+        ]
     },
     {
         "name": "Mou-Ryo",
         "race": "Foul",
+        "alignment": "Dark",
         "level": 7,
         "hp": 66,
         "mp": 42,
@@ -119,11 +142,16 @@
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Deathtouch",
+            "Pulinpa",
+            "Zan"
+        ]
     },
     {
         "name": "Slime",
         "race": "Foul",
+        "alignment":"Dark",
         "level": 6,
         "hp": 54,
         "mp": 33,
@@ -131,20 +159,24 @@
             "reflect": [],
             "absorb": [],
             "void": [
-                "death",
-                "phys"
+                "death"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "fire",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Last Resort",
+            "Sonic Wave",
+            "War Cry"
+        ]
     },
     {
         "name": "Will o' Wisp",
         "race": "Foul",
+        "alignment": "Dark",
         "level": 1,
         "hp": 30,
         "mp": 18,
@@ -152,40 +184,48 @@
             "reflect": [],
             "absorb": [],
             "void": [
-                "death",
-                "phys"
+                "death"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "magic",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Deathtouch",
+            "Makakaja",
+            "Zan"
+        ]
     },
+    // HAUNT
     {
         "name": "Rakshasa",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 63,
         "hp": 474,
         "mp": 249,
         "resistances": {
             "reflect": [],
             "absorb": [],
-            "void": [
-                "death"
-            ],
+            "void": [],
             "resist": [],
             "weak": [
                 "elec",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Stun Claw",
+            "Rakunda",
+            "Berserk"
+        ]
     },
     {
         "name": "Legion",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 49,
         "hp": 420,
         "mp": 180,
@@ -195,17 +235,22 @@
             "void": [
                 "death"
             ],
-            "resist": [],
+            "resist": ["ailments"],
             "weak": [
                 "elec",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Tetrakarn",
+            "Deathtouch",
+            "Hell Gaze"
+        ]
     },
     {
         "name": "Pisaca",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 28,
         "hp": 270,
         "mp": 114,
@@ -222,11 +267,16 @@
                 "fire"
             ]
         },
-        "skills": []
+        "skills": [
+            "Venom Bite",
+            "Stun Gaze",
+            "Sonic Wave"
+        ]
     },
     {
         "name": "Chatterskull",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 20,
         "hp": 156,
         "mp": 96,
@@ -244,11 +294,16 @@
                 "curse"
             ]
         },
-        "skills": []
+        "skills": [
+            "Sukunda",
+            "Stun Gaze",
+            "Last Resort"
+        ]
     },
     {
         "name": "Yaka",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 17,
         "hp": 150,
         "mp": 81,
@@ -264,11 +319,16 @@
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Deathtouch",
+            "Tarunda"
+            "Mazio"
+        ]
     },
     {
         "name": "Choronzon",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 11,
         "hp": 156,
         "mp": 45,
@@ -279,19 +339,23 @@
             ],
             "void": [
                 "death",
-                "phys"
             ],
-            "resist": [],
+            "resist": ["phys"],
             "weak": [
                 "force",
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Agi",
+            "Sukunda",
+            "Fire Breath"
+        ]
     },
     {
         "name": "Preta",
         "race": "Haunt",
+        "alignment": "Dark",
         "level": 4,
         "hp": 54,
         "mp": 24,
@@ -306,19 +370,22 @@
                 "magic"
             ]
         },
-        "skills": []
+        "skills": [
+            "Feral Claw",
+            "Sukukaja",
+            "Agi"
+        ]
     },
     {
-        "name": "Gurr",
+        "name": "Gurulu",
         "race": "Raptor",
         "level": 63,
         "hp": 492,
         "mp": 255,
         "resistances": {
-            "reflect": [],
+            "reflect": ["death"],
             "absorb": [],
             "void": [
-                "death",
                 "nerve",
                 "mind"
             ],
@@ -327,8 +394,13 @@
                 "expel"
             ]
         },
-        "skills": []
+        "skills": [
+            "Zandyne",
+            "Fog Breath",
+            "Mazandyne"
+        ]
     },
+    // TYRANT - CONTINUAR EDIÇÃO AQUI
     {
         "name": "Beelzebub",
         "race": "Tyrant",
