@@ -1,30 +1,262 @@
-import { useState } from 'react'
-import demons from './data/demons.json'
+import { useEffect, useState } from 'react'
+import demons from './data//demons.json'
+import confetti from 'canvas-confetti'
 
 function App() {
-  // Set secret demon
-  const [secretDemon, setSecretDemon] = useState(null);
-  console.log(secretDemon);
-  
-  function chooseRandomDemon() {
+    const [secretDemon, setSecretDemon] = useState(null)
+    const [guess, setGuess] = useState('')
+    const [guesses, setGuesses] = useState([])
+
+    useEffect(() => {
         const randomIndex = Math.floor(Math.random() * demons.length)
         setSecretDemon(demons[randomIndex])
+    }, [])
+
+    function compareValue(guessValue, secretValue) {
+        if (guessValue === secretValue) {
+            return 'correct'
+        }
+
+        if (guessValue < secretValue) {
+            return 'higher'
+        }
+
+        return 'lower'
     }
 
+    function hasCommonValue(guessArray, secretArray) {
+        return guessArray.some(value => secretArray.includes(value))
+    }
+
+    function makeGuess() {
+        if (!secretDemon || !guess.trim()) {
+            return
+        }
+
+        const selectedDemon = demons.find(
+            demon => demon.name.toLowerCase() === guess.trim().toLowerCase()
+        )
+
+        if (!selectedDemon) {
+            alert('Demônio não encontrado.')
+            return
+        }
+
+        const result = {
+            demon: selectedDemon,
+
+            race:
+                selectedDemon.race === secretDemon.race
+                    ? 'correct'
+                    : 'wrong',
+
+            level: compareValue(
+                selectedDemon.level,
+                secretDemon.level
+            ),
+
+            hp: compareValue(
+                selectedDemon.hp,
+                secretDemon.hp
+            ),
+
+            mp: compareValue(
+                selectedDemon.mp,
+                secretDemon.mp
+            ),
+
+            resistances: {
+                reflect: hasCommonValue(
+                    selectedDemon.resistances.reflect,
+                    secretDemon.resistances.reflect
+                ),
+
+                absorb: hasCommonValue(
+                    selectedDemon.resistances.absorb,
+                    secretDemon.resistances.absorb
+                ),
+
+                void: hasCommonValue(
+                    selectedDemon.resistances.void,
+                    secretDemon.resistances.void
+                ),
+
+                resist: hasCommonValue(
+                    selectedDemon.resistances.resist,
+                    secretDemon.resistances.resist
+                ),
+
+                weak: hasCommonValue(
+                    selectedDemon.resistances.weak,
+                    secretDemon.resistances.weak
+                )
+            },
+
+            skills: hasCommonValue(
+                selectedDemon.skills,
+                secretDemon.skills
+            )
+        }
+
+        setGuesses(previous => [result, ...previous])
+        setGuess('')
+
+        if (selectedDemon.name === secretDemon.name) {
+            confetes();
+        }
+    }
+
+    function getColor(type) {
+        if (type === 'correct') {
+            return 'bg-green-500 text-white'
+        }
+
+        if (type === 'wrong') {
+            return 'bg-red-500 text-white'
+        }
+
+        if (type === 'higher' || type === 'lower') {
+            return 'bg-yellow-400 text-black'
+        }
+    }
+
+    function getArrow(type) {
+        if (type === 'higher') {
+            return ' \u{1F53C}'
+        }
+
+        if (type === 'lower') {
+            return ' \u{1F53D}'
+        }
+
+        return ''
+    }
+
+    // confetes quando o usuário acertar
+    function confetes() {
+    confetti({
+        particleCount: 150,
+        spread: 90,
+        origin: {
+            y: 0.6
+        }
+    })
+}
+
     return (
-        <>
-          <h1>MegatenGuesser</h1>
+        <main className="min-h-screen bg-zinc-900 p-8 text-white">
+            <div className="mx-auto max-w-6xl">
 
-          <button onClick={chooseRandomDemon}>
-              Sortear demônio
-          </button>
+                <h1 className="mb-8 text-center text-4xl font-bold">
+                    Megaten Guesser
+                </h1>
 
-          {secretDemon && (
-            <p>
-                Demônio secreto: {secretDemon.name}
-            </p>
-          )}
-        </>
+                <div className="mb-8 flex justify-center gap-3">
+                    <input
+                        type="text"
+                        list="demons"
+                        value={guess}
+                        onChange={event => setGuess(event.target.value)}
+                        placeholder="Insert demon name"
+                        className="w-80 rounded-lg px-4 py-3 text-white outline-none"
+                    />
+
+                    <datalist id="demons">
+                        {demons.map(demon => (
+                            <option
+                                key={demon.name}
+                                value={demon.name}
+                            />
+                        ))}
+                    </datalist>
+
+                    <button
+                        onClick={makeGuess}
+                        className="rounded-lg bg-red-600 px-6 py-3 font-bold hover:bg-red-700"
+                    >
+                        Tentar
+                    </button>
+                </div>
+
+                <div className="overflow-x-auto rounded-lg">
+                    <table className="w-full border-collapse text-center">
+
+                        <thead>
+                            <tr className="bg-zinc-800">
+                                <th className="p-3">Demônio</th>
+                                <th className="p-3">Race</th>
+                                <th className="p-3">Level</th>
+                                <th className="p-3">HP</th>
+                                <th className="p-3">MP</th>
+                                <th className="p-3">Reflect</th>
+                                <th className="p-3">Absorb</th>
+                                <th className="p-3">Void</th>
+                                <th className="p-3">Resist</th>
+                                <th className="p-3">Weak</th>
+                                <th className="p-3">Skills</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {guesses.map((result, index) => (
+                                <tr key={result.demon.name}>
+
+                                    <td className="flip-card border border-zinc-700 p-3" style={{animationDelay: '0ms'}}>
+                                        {result.demon.name}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${getColor(result.race)}`} style={{animationDelay: '100ms'}}>
+                                        {result.demon.race}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${getColor(result.level)}`} style={{animationDelay: '200ms'}}>
+                                        {result.demon.level}
+                                        {getArrow(result.level)}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${getColor(result.hp)}`} style={{animationDelay: '300ms'}}>
+                                        {result.demon.hp}
+                                        {getArrow(result.hp)}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${getColor(result.mp)}`} style={{animationDelay: '400ms'}}>
+                                        {result.demon.mp}
+                                        {getArrow(result.mp)}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.reflect ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '500ms'}}>
+                                        {result.demon.resistances.reflect.join(', ') || '-'}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.absorb ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '600ms'}}>
+                                        {result.demon.resistances.absorb.join(', ') || '-'}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.void ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '700ms'}}>
+                                        {result.demon.resistances.void.join(', ') || '-'}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.resist ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '800ms'}}>
+                                        {result.demon.resistances.resist.join(', ') || '-'}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.weak ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '900ms'}}>
+                                        {result.demon.resistances.weak.join(', ') || '-'}
+                                    </td>
+
+                                    <td className={`flip-card border border-zinc-700 p-3 ${result.skills ? 'bg-yellow-400 text-black' : 'bg-red-500'}`} style={{animationDelay: '1000ms'}}>
+                                        {result.demon.skills.join(', ')}
+                                    </td>
+
+                                </tr>
+                            ))}
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+        </main>
     )
 }
 

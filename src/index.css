@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@keyframes flip {
+    from {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.flip-card {
+    animation: flip 0.5s ease backwards;
+}
