@@ -152,30 +152,27 @@ function App() {
                 </h1>
 
                 <div className="mb-8 flex justify-center gap-3">
-                    <input
-                        type="text"
-                        list="demons"
-                        value={guess}
-                        onChange={event => setGuess(event.target.value)}
-                        placeholder="Insert demon name"
-                        className="w-80 rounded-lg px-4 py-3 text-white outline-none"
-                    />
-
-                    <datalist id="demons">
-                        {demons.map(demon => (
-                            <option
-                                key={demon.name}
-                                value={demon.name}
-                            />
-                        ))}
-                    </datalist>
-
-                    <button
-                        onClick={makeGuess}
-                        className="rounded-lg bg-red-600 px-6 py-3 font-bold hover:bg-red-700"
+                    <form
+                        onSubmit={(event) => {
+                            event.preventDefault()
+                            makeGuess()
+                        }}
                     >
-                        Tentar
-                    </button>
+                        <input
+                            type="text"
+                            value={guess}
+                            onChange={event => setGuess(event.target.value)}
+                            placeholder="Insert demon name"
+                            className="w-80 rounded-lg px-4 py-3 text-white outline-none"
+                        />
+
+                        <button
+                            type="submit"
+                            className="rounded-lg bg-red-600 px-6 py-3 font-bold"
+                        >
+                            Guess
+                        </button>
+                    </form>
                 </div>
 
                 <div className="overflow-x-auto rounded-lg">
