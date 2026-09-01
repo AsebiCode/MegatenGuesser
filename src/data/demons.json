@@ -1,5 +1,4 @@
 [   
-    // FOUL
     {
         "name": "Shadow",
         "race": "Foul",
@@ -198,7 +197,6 @@
             "Zan"
         ]
     },
-    // HAUNT
     {
         "name": "Rakshasa",
         "race": "Haunt",
@@ -321,7 +319,7 @@
         },
         "skills": [
             "Deathtouch",
-            "Tarunda"
+            "Tarunda",
             "Mazio"
         ]
     },
@@ -338,7 +336,7 @@
                 "fire"
             ],
             "void": [
-                "death",
+                "death"
             ],
             "resist": ["phys"],
             "weak": [
@@ -400,7 +398,6 @@
             "Mazandyne"
         ]
     },
-    // TYRANT - CONTINUAR EDIÇÃO AQUI
     {
         "name": "Beelzebub",
         "race": "Tyrant",
