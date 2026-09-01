@@ -1,41 +1,2216 @@
 [
     {
-        "name": "Jack Frost",
-        "race": "Fairy",
-        "level": 7,
-        "hp": 78,
-        "mp": 45,
-        "resistances": {
-            "reflect": [],
-            "absorb": ["Ice"],
-            "void": [],
-            "resist": [],
-            "weak": ["Fire"]
-        },
-        "skills": [
-            "Bufu",
-            "Mabufu",
-            "Ice Breath"
-        ]
-    },
-    {
-        "name": "Decarabia",
-        "race": "Fallen",
-        "level": 58,
-        "hp": 450,
-        "mp": 240,
+        "name": "Shadow",
+        "race": "Foul",
+        "level": 52,
+        "hp": 420,
+        "mp": 216,
         "resistances": {
             "reflect": [],
             "absorb": [],
-            "void": ["Death"],
-            "resist": ["Magic"],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "force",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Sakahagi",
+        "race": "Foul",
+        "level": 45,
+        "hp": 360,
+        "mp": 186,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
             "weak": []
         },
-        "skills": [
-            "Tetrakarn",
-            "Sukukaja",
-            "Megido"
-        ]
+        "skills": []
+    },
+    {
+        "name": "Phantom",
+        "race": "Foul",
+        "level": 42,
+        "hp": 336,
+        "mp": 177,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "force",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Black Ooze",
+        "race": "Foul",
+        "level": 28,
+        "hp": 264,
+        "mp": 111,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "elec",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Blob",
+        "race": "Foul",
+        "level": 16,
+        "hp": 156,
+        "mp": 66,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "ice",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Mou-Ryo",
+        "race": "Foul",
+        "level": 7,
+        "hp": 66,
+        "mp": 42,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Slime",
+        "race": "Foul",
+        "level": 6,
+        "hp": 54,
+        "mp": 33,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "fire",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Will o' Wisp",
+        "race": "Foul",
+        "level": 1,
+        "hp": 30,
+        "mp": 18,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "magic",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Rakshasa",
+        "race": "Haunt",
+        "level": 63,
+        "hp": 474,
+        "mp": 249,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Legion",
+        "race": "Haunt",
+        "level": 49,
+        "hp": 420,
+        "mp": 180,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Pisaca",
+        "race": "Haunt",
+        "level": 28,
+        "hp": 270,
+        "mp": 114,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "curse",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Chatterskull",
+        "race": "Haunt",
+        "level": 20,
+        "hp": 156,
+        "mp": 96,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "expel",
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Yaka",
+        "race": "Haunt",
+        "level": 17,
+        "hp": 150,
+        "mp": 81,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "ice",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Choronzon",
+        "race": "Haunt",
+        "level": 11,
+        "hp": 156,
+        "mp": 45,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "force",
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Preta",
+        "race": "Haunt",
+        "level": 4,
+        "hp": 54,
+        "mp": 24,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "magic"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Gurr",
+        "race": "Raptor",
+        "level": 63,
+        "hp": 492,
+        "mp": 255,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "nerve",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Beelzebub",
+        "race": "Tyrant",
+        "level": 95,
+        "hp": 738,
+        "mp": 372,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Mot",
+        "race": "Tyrant",
+        "level": 91,
+        "hp": 732,
+        "mp": 369,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Beelzebub (Human)",
+        "race": "Tyrant",
+        "level": 84,
+        "hp": 666,
+        "mp": 333,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ailments"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Aciel",
+        "race": "Tyrant",
+        "level": 77,
+        "hp": 624,
+        "mp": 306,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "death",
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Surt",
+        "race": "Tyrant",
+        "level": 74,
+        "hp": 588,
+        "mp": 282,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "death",
+                "nerve",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Abaddon",
+        "race": "Tyrant",
+        "level": 69,
+        "hp": 564,
+        "mp": 279,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Loki",
+        "race": "Tyrant",
+        "level": 52,
+        "hp": 432,
+        "mp": 216,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys",
+                "magic",
+                "ailments"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Mada",
+        "race": "Vile",
+        "level": 83,
+        "hp": 678,
+        "mp": 312,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Samael",
+        "race": "Vile",
+        "level": 73,
+        "hp": 576,
+        "mp": 297,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Tao Tie",
+        "race": "Vile",
+        "level": 65,
+        "hp": 516,
+        "mp": 258,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Girimehkala",
+        "race": "Vile",
+        "level": 58,
+        "hp": 474,
+        "mp": 225,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Pazuzu",
+        "race": "Vile",
+        "level": 45,
+        "hp": 390,
+        "mp": 192,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Baphomet",
+        "race": "Vile",
+        "level": 33,
+        "hp": 300,
+        "mp": 150,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Arahabaki",
+        "race": "Vile",
+        "level": 30,
+        "hp": 294,
+        "mp": 120,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "phys",
+                "expel",
+                "death",
+                "fire",
+                "ice",
+                "elec",
+                "force",
+                "magic",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Hresvelgr",
+        "race": "Wilder",
+        "level": 75,
+        "hp": 564,
+        "mp": 285,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Mothman",
+        "race": "Wilder",
+        "level": 43,
+        "hp": 366,
+        "mp": 183,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "fire",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Nue",
+        "race": "Wilder",
+        "level": 31,
+        "hp": 258,
+        "mp": 120,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Raiju",
+        "race": "Wilder",
+        "level": 25,
+        "hp": 204,
+        "mp": 120,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Bicorn",
+        "race": "Wilder",
+        "level": 15,
+        "hp": 150,
+        "mp": 63,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ailments"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Zhen",
+        "race": "Wilder",
+        "level": 6,
+        "hp": 72,
+        "mp": 36,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ailments"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Barong",
+        "race": "Avatar",
+        "level": 60,
+        "hp": 456,
+        "mp": 246,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Yatagarasu",
+        "race": "Avatar",
+        "level": 46,
+        "hp": 348,
+        "mp": 195,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Cai-Zhi",
+        "race": "Avatar",
+        "level": 26,
+        "hp": 210,
+        "mp": 114,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ailments"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Makami",
+        "race": "Avatar",
+        "level": 22,
+        "hp": 186,
+        "mp": 108,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Garuda",
+        "race": "Avian",
+        "level": 63,
+        "hp": 492,
+        "mp": 243,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "curse",
+                "nerve"
+            ],
+            "resist": [],
+            "weak": [
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Vishnu",
+        "race": "Deity",
+        "level": 93,
+        "hp": 708,
+        "mp": 384,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "expel"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Mithra",
+        "race": "Deity",
+        "level": 78,
+        "hp": 630,
+        "mp": 309,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Odin",
+        "race": "Deity",
+        "level": 65,
+        "hp": 498,
+        "mp": 270,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Amaterasu",
+        "race": "Deity",
+        "level": 56,
+        "hp": 438,
+        "mp": 237,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "fire",
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Atavaka",
+        "race": "Deity",
+        "level": 47,
+        "hp": 402,
+        "mp": 183,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "nerve",
+                "mind"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Horus",
+        "race": "Deity",
+        "level": 38,
+        "hp": 312,
+        "mp": 162,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Qing Long",
+        "race": "Dragon",
+        "level": 44,
+        "hp": 396,
+        "mp": 171,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Xuanwu",
+        "race": "Dragon",
+        "level": 24,
+        "hp": 240,
+        "mp": 105,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Flaemis",
+        "race": "Element",
+        "level": 20,
+        "hp": 156,
+        "mp": 96,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Aquans",
+        "race": "Element",
+        "level": 15,
+        "hp": 126,
+        "mp": 75,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Aeros",
+        "race": "Element",
+        "level": 11,
+        "hp": 102,
+        "mp": 57,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Erthys",
+        "race": "Element",
+        "level": 7,
+        "hp": 90,
+        "mp": 36,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Saki Mitama",
+        "race": "Mitama",
+        "level": 35,
+        "hp": 270,
+        "mp": 138,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Kusi Mitama",
+        "race": "Mitama",
+        "level": 32,
+        "hp": 240,
+        "mp": 150,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Nigi Mitama",
+        "race": "Mitama",
+        "level": 29,
+        "hp": 234,
+        "mp": 117,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Ara Mitama",
+        "race": "Mitama",
+        "level": 25,
+        "hp": 210,
+        "mp": 105,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Albion",
+        "race": "Entity",
+        "level": 64,
+        "hp": 534,
+        "mp": 252,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "phys",
+                "ice",
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Shiva",
+        "race": "Fury",
+        "level": 95,
+        "hp": 786,
+        "mp": 363,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Beidou Xingjun",
+        "race": "Fury",
+        "level": 61,
+        "hp": 504,
+        "mp": 255,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Qitian Dasheng",
+        "race": "Fury",
+        "level": 54,
+        "hp": 432,
+        "mp": 201,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "phys",
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Dionysus",
+        "race": "Fury",
+        "level": 44,
+        "hp": 354,
+        "mp": 192,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "fire",
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Cu Chulainn",
+        "race": "Genma",
+        "level": 52,
+        "hp": 414,
+        "mp": 201,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Hanuman",
+        "race": "Genma",
+        "level": 46,
+        "hp": 366,
+        "mp": 174,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Kurama Tengu",
+        "race": "Genma",
+        "level": 38,
+        "hp": 306,
+        "mp": 165,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Chimera",
+        "race": "Holy",
+        "level": 55,
+        "hp": 426,
+        "mp": 204,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "nerve",
+                "mind"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Baihu",
+        "race": "Holy",
+        "level": 43,
+        "hp": 348,
+        "mp": 153,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Feng Huang",
+        "race": "Holy",
+        "level": 36,
+        "hp": 276,
+        "mp": 138,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Senri",
+        "race": "Holy",
+        "level": 27,
+        "hp": 216,
+        "mp": 123,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Unicorn",
+        "race": "Holy",
+        "level": 21,
+        "hp": 186,
+        "mp": 99,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "curse",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Shiisaa",
+        "race": "Holy",
+        "level": 13,
+        "hp": 120,
+        "mp": 57,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Thor",
+        "race": "Kishin",
+        "level": 76,
+        "hp": 612,
+        "mp": 288,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "curse",
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Bishamon",
+        "race": "Kishin",
+        "level": 72,
+        "hp": 582,
+        "mp": 267,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Futomimi",
+        "race": "Kishin",
+        "level": 63,
+        "hp": 498,
+        "mp": 267,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Jikokuten",
+        "race": "Kishin",
+        "level": 52,
+        "hp": 426,
+        "mp": 204,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Take-Mikazuchi",
+        "race": "Kishin",
+        "level": 45,
+        "hp": 372,
+        "mp": 177,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Okuninushi",
+        "race": "Kishin",
+        "level": 39,
+        "hp": 312,
+        "mp": 165,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Komokuten",
+        "race": "Kishin",
+        "level": 33,
+        "hp": 282,
+        "mp": 135,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "force"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Zouchouten",
+        "race": "Kishin",
+        "level": 27,
+        "hp": 234,
+        "mp": 111,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "curse",
+                "nerve"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Take-Minakata",
+        "race": "Kishin",
+        "level": 17,
+        "hp": 168,
+        "mp": 75,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "fire",
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Skadi",
+        "race": "Lady",
+        "level": 74,
+        "hp": 570,
+        "mp": 309,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "expel",
+                "curse"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kali",
+        "race": "Lady",
+        "level": 67,
+        "hp": 540,
+        "mp": 258,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "death"
+            ],
+            "void": [
+                "fire",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Parvati",
+        "race": "Lady",
+        "level": 57,
+        "hp": 432,
+        "mp": 240,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kushinada",
+        "race": "Lady",
+        "level": 41,
+        "hp": 330,
+        "mp": 180,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kikuri-Hime",
+        "race": "Lady",
+        "level": 24,
+        "hp": 210,
+        "mp": 120,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "nerve",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Scathach",
+        "race": "Megami",
+        "level": 64,
+        "hp": 486,
+        "mp": 270,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "expel",
+                "curse"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Lakshmi",
+        "race": "Megami",
+        "level": 54,
+        "hp": 414,
+        "mp": 234,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Sati",
+        "race": "Megami",
+        "level": 48,
+        "hp": 366,
+        "mp": 204,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "fire",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Sarasvati",
+        "race": "Megami",
+        "level": 30,
+        "hp": 246,
+        "mp": 141,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Ame-no-Uzume",
+        "race": "Megami",
+        "level": 18,
+        "hp": 156,
+        "mp": 90,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Metatron",
+        "race": "Seraph",
+        "level": 95,
+        "hp": 744,
+        "mp": 387,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Michael",
+        "race": "Seraph",
+        "level": 90,
+        "hp": 678,
+        "mp": 360,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Gabriel",
+        "race": "Seraph",
+        "level": 87,
+        "hp": 654,
+        "mp": 351,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "fire",
+                "elec",
+                "force"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Raphael",
+        "race": "Seraph",
+        "level": 84,
+        "hp": 636,
+        "mp": 330,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "fire",
+                "force"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Uriel",
+        "race": "Seraph",
+        "level": 73,
+        "hp": 558,
+        "mp": 291,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Ganesha",
+        "race": "Wargod",
+        "level": 58,
+        "hp": 474,
+        "mp": 237,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "force",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Valkyrie",
+        "race": "Wargod",
+        "level": 33,
+        "hp": 282,
+        "mp": 135,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Cerberus",
+        "race": "Beast",
+        "level": 61,
+        "hp": 456,
+        "mp": 225,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "fire"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Suparna",
+        "race": "Beast",
+        "level": 54,
+        "hp": 408,
+        "mp": 219,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ailments"
+            ],
+            "void": [
+                "force"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Orthrus",
+        "race": "Beast",
+        "level": 34,
+        "hp": 282,
+        "mp": 126,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Badb Catha",
+        "race": "Beast",
+        "level": 23,
+        "hp": 186,
+        "mp": 87,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Nekomata",
+        "race": "Beast",
+        "level": 18,
+        "hp": 156,
+        "mp": 90,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Inugami",
+        "race": "Beast",
+        "level": 13,
+        "hp": 132,
+        "mp": 60,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "fire",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Ongyo-Ki",
+        "race": "Brute",
+        "level": 81,
+        "hp": 624,
+        "mp": 324,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "phys",
+                "death",
+                "curse",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Fuu-Ki",
+        "race": "Brute",
+        "level": 66,
+        "hp": 516,
+        "mp": 261,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Sui-Ki",
+        "race": "Brute",
+        "level": 62,
+        "hp": 492,
+        "mp": 258,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kin-Ki",
+        "race": "Brute",
+        "level": 59,
+        "hp": 498,
+        "mp": 216,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Shiki-Ouji",
+        "race": "Brute",
+        "level": 54,
+        "hp": 420,
+        "mp": 234,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Yomotsu-Ikusa",
+        "race": "Brute",
+        "level": 44,
+        "hp": 342,
+        "mp": 177,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "nerve"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
     },
     {
         "name": "Oni",
@@ -45,15 +2220,1472 @@
         "mp": 96,
         "resistances": {
             "reflect": [],
-            "absorb": [],
+            "absorb": [
+                "phys"
+            ],
             "void": [],
-            "resist": ["Phys"],
-            "weak": ["Nerve"]
+            "resist": [],
+            "weak": [
+                "nerve"
+            ]
         },
-        "skills": [
-            "Rakunda",
-            "Berserk",
-            "War Cry"
-        ]
+        "skills": []
+    },
+    {
+        "name": "Momunofu",
+        "race": "Brute",
+        "level": 20,
+        "hp": 180,
+        "mp": 78,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "ailments"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Shikigami",
+        "race": "Brute",
+        "level": 4,
+        "hp": 48,
+        "mp": 27,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "elec"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Throne",
+        "race": "Divine",
+        "level": 64,
+        "hp": 492,
+        "mp": 258,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice",
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Dominion",
+        "race": "Divine",
+        "level": 50,
+        "hp": 390,
+        "mp": 204,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death",
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Virtue",
+        "race": "Divine",
+        "level": 41,
+        "hp": 348,
+        "mp": 174,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "force",
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Power",
+        "race": "Divine",
+        "level": 33,
+        "hp": 294,
+        "mp": 123,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death",
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Principality",
+        "race": "Divine",
+        "level": 28,
+        "hp": 222,
+        "mp": 120,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "death",
+                "mind"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Archangel",
+        "race": "Divine",
+        "level": 18,
+        "hp": 156,
+        "mp": 72,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "ice",
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Angel",
+        "race": "Divine",
+        "level": 11,
+        "hp": 108,
+        "mp": 54,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "force",
+                "death"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Titania",
+        "race": "Fairy",
+        "level": 57,
+        "hp": 432,
+        "mp": 240,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Oberon",
+        "race": "Fairy",
+        "level": 46,
+        "hp": 354,
+        "mp": 195,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Setanta",
+        "race": "Fairy",
+        "level": 43,
+        "hp": 378,
+        "mp": 165,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force"
+            ],
+            "resist": [],
+            "weak": [
+                "curse",
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Troll",
+        "race": "Fairy",
+        "level": 38,
+        "hp": 354,
+        "mp": 144,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "mind"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kelpie",
+        "race": "Fairy",
+        "level": 26,
+        "hp": 210,
+        "mp": 117,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Jack-o'-Lantern",
+        "race": "Fairy",
+        "level": 19,
+        "hp": 162,
+        "mp": 87,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "High Pixie",
+        "race": "Fairy",
+        "level": 10,
+        "hp": 84,
+        "mp": 48,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Jack Frost",
+        "race": "Fairy",
+        "level": 7,
+        "hp": 78,
+        "mp": 45,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Pixie",
+        "race": "Fairy",
+        "level": 2,
+        "hp": 36,
+        "mp": 24,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Flauros",
+        "race": "Fallen",
+        "level": 68,
+        "hp": 540,
+        "mp": 246,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Decarabia",
+        "race": "Fallen",
+        "level": 58,
+        "hp": 450,
+        "mp": 240,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Ose",
+        "race": "Fallen",
+        "level": 45,
+        "hp": 354,
+        "mp": 168,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Berith",
+        "race": "Fallen",
+        "level": 37,
+        "hp": 324,
+        "mp": 141,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [
+                "death",
+                "phys"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Eligor",
+        "race": "Fallen",
+        "level": 29,
+        "hp": 258,
+        "mp": 114,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Forneus",
+        "race": "Fallen",
+        "level": 20,
+        "hp": 180,
+        "mp": 81,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Rangda",
+        "race": "Femme",
+        "level": 72,
+        "hp": 552,
+        "mp": 288,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Atropos",
+        "race": "Femme",
+        "level": 67,
+        "hp": 504,
+        "mp": 285,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "mind"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Lachesis",
+        "race": "Femme",
+        "level": 63,
+        "hp": 492,
+        "mp": 267,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Clotho",
+        "race": "Femme",
+        "level": 58,
+        "hp": 438,
+        "mp": 240,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Dakini",
+        "race": "Femme",
+        "level": 52,
+        "hp": 414,
+        "mp": 189,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Yaksini",
+        "race": "Femme",
+        "level": 43,
+        "hp": 348,
+        "mp": 162,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Shikome",
+        "race": "Femme",
+        "level": 32,
+        "hp": 246,
+        "mp": 144,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "mind"
+            ],
+            "void": [
+                "curse",
+                "nerve"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Taraka",
+        "race": "Femme",
+        "level": 20,
+        "hp": 186,
+        "mp": 78,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "nerve"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Datsue-Ba",
+        "race": "Femme",
+        "level": 7,
+        "hp": 72,
+        "mp": 45,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "nerve",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Gogmagog",
+        "race": "Jirae",
+        "level": 55,
+        "hp": 456,
+        "mp": 207,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "phys",
+                "ice",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Titan",
+        "race": "Jirae",
+        "level": 49,
+        "hp": 396,
+        "mp": 177,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Sarutahiko",
+        "race": "Jirae",
+        "level": 35,
+        "hp": 312,
+        "mp": 126,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Sudama",
+        "race": "Jirae",
+        "level": 13,
+        "hp": 96,
+        "mp": 60,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Hua Po",
+        "race": "Jirae",
+        "level": 5,
+        "hp": 60,
+        "mp": 30,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kodama",
+        "race": "Jirae",
+        "level": 3,
+        "hp": 42,
+        "mp": 21,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Lilith",
+        "race": "Night",
+        "level": 80,
+        "hp": 606,
+        "mp": 330,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "expel",
+                "death"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Nyx",
+        "race": "Night",
+        "level": 70,
+        "hp": 522,
+        "mp": 291,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Black Frost",
+        "race": "Night",
+        "level": 66,
+        "hp": 474,
+        "mp": 270,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice",
+                "phys"
+            ],
+            "void": [
+                "fire",
+                "death",
+                "expel"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Queen Mab",
+        "race": "Night",
+        "level": 56,
+        "hp": 408,
+        "mp": 231,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Loa",
+        "race": "Night",
+        "level": 53,
+        "hp": 414,
+        "mp": 225,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "death",
+                "curse",
+                "nerve"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Kaiwan",
+        "race": "Night",
+        "level": 47,
+        "hp": 372,
+        "mp": 198,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "magic"
+            ],
+            "void": [
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Succubus",
+        "race": "Night",
+        "level": 37,
+        "hp": 288,
+        "mp": 159,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "expel"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Incubus",
+        "race": "Night",
+        "level": 25,
+        "hp": 198,
+        "mp": 117,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "curse",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "force"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Fomorian",
+        "race": "Night",
+        "level": 18,
+        "hp": 192,
+        "mp": 75,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Lilim",
+        "race": "Night",
+        "level": 8,
+        "hp": 78,
+        "mp": 48,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "elec"
+            ],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Yurlungur",
+        "race": "Snake",
+        "level": 66,
+        "hp": 576,
+        "mp": 246,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "magic"
+            ],
+            "resist": [],
+            "weak": [
+                "ailments"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Quetzalcoatl",
+        "race": "Snake",
+        "level": 55,
+        "hp": 492,
+        "mp": 201,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "ice"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Naga Raja",
+        "race": "Snake",
+        "level": 37,
+        "hp": 348,
+        "mp": 138,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec",
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Mizuchi",
+        "race": "Snake",
+        "level": 34,
+        "hp": 318,
+        "mp": 141,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [
+                "ice",
+                "death"
+            ],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Naga",
+        "race": "Snake",
+        "level": 28,
+        "hp": 264,
+        "mp": 108,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Nozuchi",
+        "race": "Snake",
+        "level": 14,
+        "hp": 144,
+        "mp": 60,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Efreet",
+        "race": "Yoma",
+        "level": 52,
+        "hp": 402,
+        "mp": 225,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "ice"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Pulukishi",
+        "race": "Yoma",
+        "level": 48,
+        "hp": 390,
+        "mp": 189,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "expel"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Jinn",
+        "race": "Yoma",
+        "level": 44,
+        "hp": 342,
+        "mp": 189,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Ongkhot",
+        "race": "Yoma",
+        "level": 37,
+        "hp": 288,
+        "mp": 138,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "curse",
+                "nerve"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Karasu Tengu",
+        "race": "Yoma",
+        "level": 28,
+        "hp": 234,
+        "mp": 117,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Dís",
+        "race": "Yoma",
+        "level": 23,
+        "hp": 198,
+        "mp": 111,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "fire"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Koppa Tengu",
+        "race": "Yoma",
+        "level": 19,
+        "hp": 144,
+        "mp": 87,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force"
+            ],
+            "resist": [],
+            "weak": [
+                "curse"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Isora",
+        "race": "Yoma",
+        "level": 14,
+        "hp": 132,
+        "mp": 66,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Apsaras",
+        "race": "Yoma",
+        "level": 8,
+        "hp": 84,
+        "mp": 42,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "elec"
+            ],
+            "void": [],
+            "resist": [],
+            "weak": [
+                "fire"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Dante",
+        "race": "Fiend",
+        "level": 80,
+        "hp": 612,
+        "mp": 306,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys",
+                "magic"
+            ],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Trumpeter",
+        "race": "Fiend",
+        "level": 77,
+        "hp": 588,
+        "mp": 324,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Mother Harlot",
+        "race": "Fiend",
+        "level": 69,
+        "hp": 528,
+        "mp": 279,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "phys"
+            ],
+            "void": [
+                "expel",
+                "death",
+                "curse",
+                "nerve",
+                "mind"
+            ],
+            "resist": [],
+            "weak": [
+                "elec"
+            ]
+        },
+        "skills": []
+    },
+    {
+        "name": "Pale Rider",
+        "race": "Fiend",
+        "level": 63,
+        "hp": 486,
+        "mp": 267,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "ice",
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Black Rider",
+        "race": "Fiend",
+        "level": 61,
+        "hp": 462,
+        "mp": 258,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "ice"
+            ],
+            "void": [
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Red Rider",
+        "race": "Fiend",
+        "level": 55,
+        "hp": 438,
+        "mp": 228,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "elec",
+                "force",
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "White Rider",
+        "race": "Fiend",
+        "level": 52,
+        "hp": 408,
+        "mp": 207,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "fire",
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Hell Biker",
+        "race": "Fiend",
+        "level": 42,
+        "hp": 336,
+        "mp": 168,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "force"
+            ],
+            "void": [
+                "fire",
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Daisoujou",
+        "race": "Fiend",
+        "level": 37,
+        "hp": 288,
+        "mp": 174,
+        "resistances": {
+            "reflect": [],
+            "absorb": [
+                "curse",
+                "mind"
+            ],
+            "void": [
+                "expel",
+                "death",
+                "nerve"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
+    },
+    {
+        "name": "Matador",
+        "race": "Fiend",
+        "level": 30,
+        "hp": 246,
+        "mp": 117,
+        "resistances": {
+            "reflect": [],
+            "absorb": [],
+            "void": [
+                "force",
+                "expel",
+                "death",
+                "ailments"
+            ],
+            "resist": [],
+            "weak": []
+        },
+        "skills": []
     }
 ]

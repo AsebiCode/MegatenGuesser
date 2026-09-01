@@ -144,12 +144,15 @@ function App() {
 }
 
     return (
-        <main className="min-h-screen bg-zinc-900 p-8 text-white">
-            <div className="mx-auto max-w-6xl">
+        <main className="min-h-screen flex flex-col bg-zinc-900 p-8 text-white items-center">
+            <div className="mx-auto max-w-6xl flex-1">
 
-                <h1 className="mb-8 text-center text-4xl font-bold">
-                    Megaten Guesser
-                </h1>
+                <span className="mb-8 flex flex-row justify-center gap-3">
+                    <img className="size-12" src="./src/assets/fav2.ico" alt="" />
+                    <h1 className="mb-8 text-center text-4xl font-bold">
+                        Megaten Guesser
+                    </h1>
+                </span>
 
                 <div className="mb-8 flex justify-center gap-3">
                     <form
@@ -221,23 +224,68 @@ function App() {
                                         {getArrow(result.mp)}
                                     </td>
 
-                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.reflect ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '500ms'}}>
+                                    <td
+                                        className={`flip-card border border-zinc-700 p-3 ${
+                                            result.demon.resistances.reflect.length === 0
+                                                ? 'bg-zinc-500'
+                                                : result.resistances.reflect
+                                                    ? 'bg-green-500'
+                                                    : 'bg-red-500'
+                                        }`}
+                                        style={{animationDelay: '500ms'}}
+                                    >
                                         {result.demon.resistances.reflect.join(', ') || '-'}
                                     </td>
 
-                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.absorb ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '600ms'}}>
+                                    <td
+                                        className={`flip-card border border-zinc-700 p-3 ${
+                                            result.demon.resistances.absorb.length === 0
+                                                ? 'bg-zinc-500'
+                                                : result.resistances.absorb
+                                                    ? 'bg-green-500'
+                                                    : 'bg-red-500'
+                                        }`}
+                                        style={{animationDelay: '600ms'}}
+                                    >
                                         {result.demon.resistances.absorb.join(', ') || '-'}
                                     </td>
 
-                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.void ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '700ms'}}>
+                                    <td
+                                        className={`flip-card border border-zinc-700 p-3 ${
+                                            result.demon.resistances.void.length === 0
+                                                ? 'bg-zinc-500'
+                                                : result.resistances.void
+                                                    ? 'bg-green-500'
+                                                    : 'bg-red-500'
+                                        }`}
+                                        style={{animationDelay: '700ms'}}
+                                    >
                                         {result.demon.resistances.void.join(', ') || '-'}
                                     </td>
 
-                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.resist ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '800ms'}}>
+                                    <td
+                                        className={`flip-card border border-zinc-700 p-3 ${
+                                            result.demon.resistances.resist.length === 0
+                                                ? 'bg-zinc-500'
+                                                : result.resistances.resist
+                                                    ? 'bg-green-500'
+                                                    : 'bg-red-500'
+                                        }`}
+                                        style={{animationDelay: '800ms'}}
+                                    >
                                         {result.demon.resistances.resist.join(', ') || '-'}
                                     </td>
 
-                                    <td className={`flip-card border border-zinc-700 p-3 ${result.resistances.weak ? 'bg-green-500' : 'bg-red-500'}`} style={{animationDelay: '900ms'}}>
+                                    <td
+                                        className={`flip-card border border-zinc-700 p-3 ${
+                                            result.demon.resistances.weak.length === 0
+                                                ? 'bg-zinc-500'
+                                                : result.resistances.weak
+                                                    ? 'bg-green-500'
+                                                    : 'bg-red-500'
+                                        }`}
+                                        style={{animationDelay: '900ms'}}
+                                    >
                                         {result.demon.resistances.weak.join(', ') || '-'}
                                     </td>
 
@@ -253,6 +301,19 @@ function App() {
                 </div>
 
             </div>
+            {/* Rodapé */}
+             <footer className="mt-8 text-center text-sm text-zinc-400">
+                <a
+                    href="https://github.com/AsebiCode/MegatenGuesser"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <ion-icon
+                        name="logo-github"
+                        className="text-4xl"
+                    ></ion-icon>
+                </a>
+          </footer>
         </main>
     )
 }
